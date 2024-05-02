@@ -19,14 +19,70 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <!-- Navbar -->
+    <div class='navbar'>
+      <div class='navbarContainer'>
+        <div class='rightSide'>
+          <div class='logo'>
+              <a href="/home" class="logoa"><i class="fa fa-film" aria-hidden="true"></i>
+              Cinemix</a>
+          </div>
+
+          <!-- <div class="search-container">
+            <input type="text" name="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyUp={searchQueryHandler} class="search-input" />
+              <a href="/searchResult" title="searchResult" class="search-btn">
+                <i class="fas fa-search"></i>
+              </a>
+          </div> -->
+        </div>
+        </div>
+
+      <div class='leftSide' >
+        <ul class="nav-menu" id="navMenu">
+
+          <li><a href='https://cinemax-project.netlify.app/home'>Home</a></li>
+          <li><a href='https://cinemax-project.netlify.app/movie'>Movie</a></li>
+          <li><a href='https://cinemax-project.netlify.app/TvShow'>TV Show</a></li>
+          <li><a href='https://cinemaxwatchparty.netlify.app/'>Watch Party</a></li>
+          <!-- <li> -->
+            <!-- {signInChecker ? <Profile userName={userName}/> : <a href='/register'>SignIn</a>} -->
+            
+          <!-- </li> -->
+        </ul>
+
+        <div class="menu-bars" onClick={handleNav}>
+          <i class="fa fa-bars 2x"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get the nav menu element
+      var navMenu = document.getElementById('navMenu');
+    
+      // Toggle the 'active' class when clicked
+      navMenu.addEventListener('click', function() {
+        // Check if the 'active' class is already present
+        var isActive = navMenu.classList.contains('active');
+    
+        // Toggle the 'active' class
+        if (isActive) {
+          navMenu.classList.remove('active');
+        } else {
+          navMenu.classList.add('active');
+        }
+      });
+    </script>
+    
+
     <!-- Landing Page -->
     <div class="landing" id="landing">
       <div class="container-fluid main">
-        <div class="row">
-          <div class="col-12 logo text-center">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-12 logo text-center">
             <img src="icon.png" width="300px" alt="Logo">
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
         <div class="row">
           <div class="col-12 text-center">
             <h1 class="head">
