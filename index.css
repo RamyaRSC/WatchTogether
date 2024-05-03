@@ -3,15 +3,19 @@
     src: URL('../fonts/AirbnbCerealBlack.ttf') format('truetype');
 }
 
+*{
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 body {
   background-color: var(--primary--color);
   color: white;
-  font-family: 'Lexend Deca', sans-serif
+  /* font-family: 'Lexend Deca', sans-serif */
 }
 
 .back-btn{
   font-size: 2rem;
-  color: black;
+  color: var(--secondary--color);
 }
 
 .back-btn:hover {
@@ -37,7 +41,7 @@ body {
 .head{
   font-size: 3.5rem;
   color: var(--secondary--color);
-  font-family: 'Airbnb';
+  /* font-family: 'Airbnb'; */
 }
 
 .buttons{
@@ -71,6 +75,10 @@ body {
 
 /* Landing Page End */
 
+.row {
+  color: var(--secondary--color);
+}
+
 /* Create Page Start */
 
 .create{
@@ -78,7 +86,7 @@ body {
 }
 
 .create-head{
-  font-family: 'Airbnb';
+  /* font-family: 'Airbnb'; */
   font-size: 3.5rem;
 }
 
@@ -88,11 +96,11 @@ body {
 
 input{
   background-color: var(--primary--color);
-  color: white;
+  color: var(--secondary--color);
   border-radius: 5px;
   width: 20rem;
   font-size: 1.1rem;
-  border: 1px solid white;
+  border: 1px solid var(--secondary--color);
   padding: 10px 15px;
 }
 
