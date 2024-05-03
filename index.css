@@ -316,7 +316,8 @@ input:focus{
   color: var(--secondary--color)
 }
 
-.rightSide .logo:hover {
+.rightSide .logoa:hover {
+  color: var(--secondary--color);
   cursor: pointer;
 }
 
